@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import StudentForm from "./StudentForm";
 import StudentList from "./StudentList";
+import './assets/css/style.css'; 
 
 const API_URL = "http://localhost:8080/students";
 
@@ -34,7 +35,7 @@ function App() {
   };
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div className="app-container">
       <h1>Student Management</h1>
       <StudentForm onAdd={addStudent} />
       <StudentList
