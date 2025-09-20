@@ -5,8 +5,7 @@ function StudentList({ students, onUpdate, onDelete }) {
   const [editName, setEditName] = useState("");
   const [editCourse, setEditCourse] = useState("");
 
-  const startEdit = (student) => {
-    setEditingId(student.id);
+  const startEdit = (student) => {;
     setEditName(student.name);
     setEditCourse(student.course);
   };
